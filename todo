@@ -1,0 +1,101 @@
+Sistem Pengurusan Risiko Quantum
+Sistem pengurusan risiko quantum adalah sebuat platform yang direka untuk membantu organisasi dalam mengidentifikasi, menilai, dan mengelola risiko yang berkaitan dengan teknologi kuantum. juga untuk menyokong dan membantu peralihan ke arah Post-Quantum Cryptography. dan juga memaparkan sistem yang perlu di mitigasi dahulu
+
+Skop Projek
+
+1. Merekodkan risiko-risiko yang berkaitan aset bagi agensi yang menyertai program PTPKM.
+2. Menilai impak dan kemungkinan risiko-risiko tersebut.
+
+Menu
+Admin
+Dashboard
+Pengurusan Risiko
+Senarai Risiko
+Laporan Risiko
+Pengurusan Pengguna
+Daftar Pengguna
+Senarai Pengguna
+Pengurusan Data
+Kategori Risiko
+Subkategori Risiko
+Risiko
+Kategori Punca Risiko
+Punca Risiko
+Pelan Mitigasi
+
+Agensi
+Dashboard
+Pengurusan Risiko
+Daftar Risiko
+Senarai Risiko
+Laporan Risiko
+Pengurusan Data
+
+Database
+
+1. Jadual Pengguna
+    - id (primary key)
+    - Nama
+    - Emel
+    - Peranan (admin/agensi)
+
+2. Agensi
+   id
+   nama_agensi
+   no_tel_agensi
+   website
+   nama_pic
+   notel_pic
+   emel_pic
+   sektor_id
+   jenis_agensi
+
+3. Aset
+   id
+   agensi_id
+   id_jenis_aset
+   nama_aset
+
+4. Daftar_Risiko
+   id
+   agensi_id
+   aset_id
+
+    kategori_id
+    sub_kategori_risiko_id
+    risiko_id
+    kategori_punca_risiko_id
+
+    impak
+    kebarangkalian
+    skor_risiko
+    tahap_risiko
+    kawalan_sediada
+    plan_mitigasi
+    pemilik_risiko
+
+5. Kategori_risiko
+   id
+   nama
+
+6. Sub_kategori_risiko
+   id
+   kategori_risiko_id
+
+7. Risiko
+   id
+   sub_kategori_risiko_id
+   nama
+
+8. Kategori_punca_risiko
+   id
+   nama
+
+9. Punca_risiko
+   id
+   Kategori_punca_risiko
+   nama
+
+10. Jenis_aset
+    id
+    nama
